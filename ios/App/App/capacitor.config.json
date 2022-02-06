@@ -1,0 +1,9 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "pay_calculator",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://192.168.0.20:8100"
+	}
+}
