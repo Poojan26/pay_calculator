@@ -5,7 +5,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" color="Danger">
+<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Pay Calculator</ion-title>
@@ -14,14 +14,14 @@
 
 
   <ion-content fullscreen>
-    <ion-list lines="full" class="ion-no-margin">
+    <ion-list lines="none">
       <br/>
       <br/>
       <ion-item>
-        <ion-label>No of Hours worked: </ion-label>
+        <ion-label>Number of Hours worked: </ion-label>
         <ion-input
           [(ngModel)]="hours"
-          type="number" placeholder="00"
+          type="number" position="floating" placeholder="00"
         ></ion-input>
       </ion-item>
 
@@ -29,14 +29,14 @@
         <ion-label>Hourly Rate: </ion-label>
         <ion-input
           [(ngModel)]="hrRate"
-          type="number" placeholder= "00"
+          type="number" position="floating" placeholder= "00"
         ></ion-input>
       </ion-item>
     </ion-list>
 
-    <ion-button expand="block" (click)="Calculate()">Calculate</ion-button>
+    <ion-button color="success" expand="block" (click)="Calculate()">Calculate</ion-button>
 
-    <ion-list lines="full" class="ion-no-margin">
+    <ion-list lines="none">
       <br/>
       <br/>
 
