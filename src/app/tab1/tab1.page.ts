@@ -15,9 +15,8 @@ export class Tab1Page {
   overtime = 0; 
   total = 0; 
   tax = 0; 
-  netIncome = 0; 
-
-
+  salary = 0; 
+  
   constructor() {}
 
   // Method to calculate pay 
@@ -36,14 +35,15 @@ export class Tab1Page {
     this.overtime = (this.hours - 40) * this.hrRate*1.5 + 40 * this.hrRate;
     }
 
-    // Tax calculation 
-    this.tax = this.regular * 0.18;
-
     // total pay 
     this.total = this.regular + this.overtime;
+
+    // Tax on total pay 
+    this.tax = this.total * 0.18
     
-    // Net income 
-  }
+    // Salary after tax deduction 
+    this.salary = this.total - this.tax
+    }
 
 
 
